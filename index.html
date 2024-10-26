@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="xaxa">
+        <h1 id="bil">Билеты на концерт</h1>
+        <label for="singerName">Певец:</label>
+        <select id="singerName"  oninput="concertPrice()">
+            <option value="rih">Rihanna</option>
+            <option value="Emin">Eminem</option>
+            <option value="sel">Selena Gomez</option>
+            <option value="bts">BTS</option>
+            <option value="blck">BlackPink</option>
+            <option value="cent">50cent</option>
+            <option value="Kat">Katy Perry</option>
+        </select>
+         <p>Сумма:
+            <input type="text" readonly id="price">
+        </p>
+        <label for="step">Скидка:</label>
+        <input id="step" type="range" value="0" min="0" max="50" step="10" oninput="concertPrice()">
+        <span id="percantage">0 %</span>
+    </class>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
